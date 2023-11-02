@@ -11,10 +11,13 @@ module tt_um_if (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+    
+    wire [7:0] threshold = 8'hE6;  // Example threshold value
+    
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
     assign uio_out[6:0] = 6'd0;
-    assign threshold = 8'hE6;  // Example threshold value
+    
 
 
     // instantiate lif neuron 
