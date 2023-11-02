@@ -63,7 +63,6 @@ module if_neuron (
             next_state <= current;
         end
     end
-    
-endmodule
 
 endmodule
+
