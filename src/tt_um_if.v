@@ -17,6 +17,6 @@ module tt_um_if (
 
 
     // instantiate lif neuron 
-    if if1(.current(ui_in), .clk(clk), .rst_n(rst_n), .spike(uio_out[7]), .state(uo_out));
+    if_neuron if_neuron1(.current(ui_in), .clk(clk), .rst_n(rst_n), .spike(uio_out[7]), .state(uo_out));
 
 endmodule

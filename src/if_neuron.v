@@ -28,7 +28,7 @@
 */
 `default_nettype none
 
-module if ( 
+module if_neuron ( 
     input wire [7:0] current,
     input wire       clk,
     input wire       rst_n,
