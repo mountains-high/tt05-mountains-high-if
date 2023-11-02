@@ -36,22 +36,21 @@ module if_neuron (
     output reg [7:0] state
 );
     reg  [7:0] threshold;
+    wire [7:0] next_state;
     
 
-always @(posedge clk or negedge rst_n) begin
+always @(posedge clk) begin
         if (!rst_n) begin
-            state <= 8'b0;
-            threshold <= 8'hE6;  // Example threshold value
-        end else if (state >= threshold) begin
-            state <= 8'b0;  // Reset the state when the threshold is crossed
+            state <= 0;
+            threshold <= 230;
         end else begin
-            state <= state + current;
+            state <= next_state;
         end
     end
 
-    // Spiking logic
+    // next_state logic and spiking logic
     assign spike = (state >= threshold);
+    assign next_state = (spike ? 0 : (state + current)) - (spike ? threshold : 0);
 
 
 endmodule
-
