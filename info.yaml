@@ -22,15 +22,18 @@ yaml_version: 4
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
   author:       "Kembay  Assel"      # Your name
-  title:        "Leaky Integrate-and-Fire Neuron. (Verilog Demo)"      # Project title
+  title:        "Integrate-and-Fire Neuron. (Verilog Demo)"      # Project title
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "Implement a LIF neuron in silicon."      # Short description of what your project does
+  description:  "Implement a IF neuron in silicon."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Apply an input current injection to the LIF neuron using switches.
+      Apply an input current injection to the IF neuron using switches.
 
-      This gets added to a membrane potential which is decayed over time.
+      The IF neuron model fires a spike as soon as the input voltage crosses 
+      the specified threshold without considering any leakage or time-dependent state.
+      
+      #This gets added to a membrane potential 
       If the membrane potential exceeds the threshold then trigger a spike. 
 
     

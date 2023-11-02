@@ -48,7 +48,22 @@ module if_neuron (
     end
 
     // next_state logic and spiking logic
+    //assign spike = (state >= threshold);
+    //assign next_state = (spike ? 0 : current) + (spike ? 0 : (state >> 1)+(state >> 2)+(state >> 3));
+
+    // Spiking logic
     assign spike = (state >= threshold);
-    assign next_state = (spike ? 0 : current) + (spike ? 0 : (state >> 1)+(state >> 2)+(state >> 3));
+    
+    always @(posedge clk or posedge rst_n) begin
+        if (!rst_n) begin
+            next_state <= 0;
+        end else if (spike) begin
+            next_state <= 0;
+        end else begin
+            next_state <= current;
+        end
+    end
+    
+endmodule
 
 endmodule
