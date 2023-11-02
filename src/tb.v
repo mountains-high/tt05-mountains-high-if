@@ -27,7 +27,7 @@ module tb (
     wire [7:0] state = uo_out[7:0];
     wire       spike = uio_out [7]; 
 
-    tt_um_lif tt_um_lif (
+    tt_um_if tt_um_if (
         .ui_in      (ui_in),    // Dedicated inputs
         .uo_out     (uo_out),   // Dedicated outputs
         .uio_in     (uio_in),   // IOs: Input path

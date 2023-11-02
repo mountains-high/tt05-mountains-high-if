@@ -28,7 +28,7 @@
 */
 `default_nettype none
 
-module lif ( 
+module if ( 
     input wire [7:0] current,
     input wire       clk,
     input wire       rst_n,
