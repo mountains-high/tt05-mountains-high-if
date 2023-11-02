@@ -12,8 +12,6 @@ module tt_um_if (
 );
 
     
-    wire [7:0] threshold = 8'hE6;  // Example threshold value
-    
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
     assign uio_out[6:0] = 6'd0;
@@ -21,6 +19,6 @@ module tt_um_if (
 
 
     // instantiate lif neuron 
-    if_neuron if_neuron1(.current(ui_in), .clk(clk), .rst_n(rst_n), .spike(uio_out[7]), .state(uo_out), .threshold(threshold));
+    if_neuron if_neuron1(.current(ui_in), .clk(clk), .rst_n(rst_n), .spike(uio_out[7]), .state(uo_out), .threshold(uio_in));
 
 endmodule
