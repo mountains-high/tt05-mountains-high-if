@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-### Integrate-and-Fire Neuron in silicon.
+# Integrate-and-Fire Neuron in Silicon.
 
 # How It Works?
 
