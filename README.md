@@ -1,5 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
+### Integrate-and-Fire Neuron in silicon.
+
 # How It Works?
 
 The Tiny Tapeout Playground operates by applying an input current injection to the IF neuron using switches. The IF neuron model fires a spike when the input voltage crosses the specified threshold without considering any leakage. 
