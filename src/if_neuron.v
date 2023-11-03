@@ -23,7 +23,7 @@
       :math:`U` - Membrane potential
       :math:`U_{\\rm thr}` - Membrane threshold
       :math:`R` - Reset mechanism: if active, :math:`R = 1`, otherwise \
-        :math:`R = 0`
+      :math:`R = 0`
     
 */
 `default_nettype none
