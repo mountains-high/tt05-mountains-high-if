@@ -2,9 +2,9 @@
 
 ## Simulations and Diagram
 
-![Simulation Output](link_to_simulation_image.png)
+![Simulation Output](figures/kill_the_current.png)
 
-![System Diagram](link_to_diagram_image.png)
+![System Diagram](figures/IF_design.png)
 
 # What is Tiny Tapeout?
 
