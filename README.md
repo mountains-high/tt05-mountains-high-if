@@ -10,7 +10,10 @@ If the membrane potential exceeds the threshold, it triggers a spike.
 
 ![Simulation Output](figures/kill_the_current.png)
 
-![System Diagram](figures/IF_design.png)
+<div style="text-align: center;">
+  <img src="figures/IF_design.png" alt="IF Design" />
+</div>
+
 
 # What is Tiny Tapeout?
 
