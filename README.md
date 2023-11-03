@@ -1,5 +1,22 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
+# Integrate-and-Fire Neuron in Silicon.
+
+<div align="center">
+  <img src="figures/IF_design.png" alt="IF Design" />
+</div>
+
+# How It Works?
+
+The Tiny Tapeout Playground operates by applying an input current injection to the IF neuron using switches. The IF neuron model fires a spike when the input voltage crosses the specified threshold without considering any leakage. 
+If the membrane potential exceeds the threshold, it triggers a spike.
+
+
+## Simulations
+
+![Simulation Output](figures/kill_the_current.png)
+
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
