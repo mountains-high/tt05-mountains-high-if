@@ -11,6 +11,15 @@ If the membrane potential exceeds the threshold, it triggers a spike.
 ![Simulation Output](figures/kill_the_current.png)
 <div style="text-align:center"><img src="figures/IF_design.png" /></div>.
 
+## Simulations and Diagram
+
+![Simulation Output](figures/kill_the_current.png)
+
+<div align="center">
+  <img src="figures/IF_design.png" alt="IF Design" />
+</div>
+
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
