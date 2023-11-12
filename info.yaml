@@ -34,8 +34,17 @@ documentation:
     
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      After reset, the membrane potential is set to 0. 
-      Then, change the inputs to change the current. A higher current should trigger a higher firing rate. 
+     An 8-bit input current is applied to the IF neuron through the designated input (i.e., uio_in).
+     The membrane potential of the IF neuron will respond to the applied input current. 
+     Larger currents will lead to a higher membrane potential. The neuron is designed to generate a spike when the membrane potential exceeds a certain threshold.
+
+# Testing scenarios
+    - **Case 1:** Apply a minimal input current and observe if the neuron remains at rest.
+    - **Case 2:** Gradually increase the input current to observe the neuron's firing behaviour.
+    - **Case 3:** Apply a constant input current within a specific range to observe sustained firing.
+    - **Case 4:** Apply an input current exceeding the threshold to trigger a spike.
+    - **Case 5:** Stop applying input current and observe if the neuron returns to a resting state.
+
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc.).
   inputs:               
